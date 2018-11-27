@@ -2,6 +2,13 @@
 * {
   font-family: 'Montserrat', sans-serif !important;
 }
+.mainy {
+  color: #fff;
+  background: url('./sss.jpeg');
+  background-size: cover;
+  background-position: 0px, -200px;
+  background-repeat: no-repeat;
+}
 .title {
   letter-spacing: -1px;
 }
@@ -16,27 +23,37 @@
 }
 .navbar {
   height: 98px;
-  background: lightblue;
+  background: transparent;
 }
 .navbar-item {
-  background-color: azure;
-  border: 1px solid #111;
+  color: #1a1a1a;
   box-sizing: border-box;
+  font-size: 1rem;
+  font-weight: bold;
+  height: 2rem;
+  margin: 2rem 0.5rem;
+  border-radius: 1rem;
+  transition: all ease 200ms;
+}
+.navbar-item:hover {
+  cursor: pointer;
+  background: #fff;
+  color: #00d2ff;
 }
 .column {
   margin: 0 10px;
 }
-
 svg {
   width: 60px;
-  height: 60px;
+  min-height: 60px;
 }
 .lang {
-  width: 120px;
+  width: 140px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 120px;
+  text-align: center;
+  height: 130px;
   justify-content: space-between;
 }
 .gg {
