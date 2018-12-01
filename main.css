@@ -60,3 +60,6 @@ svg {
   flex-wrap: wrap;
   justify-content: space-around;
 }
+.contacts {
+  height: 8rem;
+}
