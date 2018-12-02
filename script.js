@@ -39,10 +39,8 @@ let nxt = devStrings[txt];
 const typ = new TypeIt('.typeit', {
   strings: nxt,
   afterString: (s, q, instance) => {
-    let newTxt = txt;
-    while (newTxt == txt) {
-      newTxt = Math.floor(Math.random() * 5);
-    }
+    let newTxt = (txt + 1) % 5;
+
     nxt = devStrings[newTxt];
     typ
       .pause(500)

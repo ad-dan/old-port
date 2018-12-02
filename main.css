@@ -25,6 +25,11 @@
   height: 98px;
   background: transparent;
 }
+.navbar-brand svg {
+  margin: 1rem 2rem;
+  height: 3rem;
+  width: 3rem;
+}
 .navbar-item {
   color: #fff;
   box-sizing: border-box;
