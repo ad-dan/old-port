@@ -27,8 +27,8 @@ contBtn.addEventListener('click', () => {
 });
 
 const devStrings = [
-  'Javascript developer',
-  'Web developer',
+  'Javascript dev',
+  'Web dev',
   'Script kiddie',
   'Coder',
   'App developer'
@@ -39,9 +39,8 @@ let nxt = devStrings[txt];
 const typ = new TypeIt('.typeit', {
   strings: nxt,
   afterString: (s, q, instance) => {
-    let newTxt = (txt + 1) % 5;
-
-    nxt = devStrings[newTxt];
+    txt = (txt + 1) % 5;
+    nxt = devStrings[txt];
     typ
       .pause(500)
       .delete()
