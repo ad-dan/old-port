@@ -4,7 +4,7 @@
 }
 .mainy {
   color: #fff;
-  background: url('./sss.jpeg');
+  background: url('./pexels-photo-331684.jpg');
   background-size: cover;
   background-position: 0px, -200px;
   background-repeat: no-repeat;
@@ -26,7 +26,7 @@
   background: transparent;
 }
 .navbar-item {
-  color: #1a1a1a;
+  color: #fff;
   box-sizing: border-box;
   font-size: 1rem;
   font-weight: bold;
@@ -38,6 +38,7 @@
 .navbar-item:hover {
   cursor: pointer;
   background: #fff;
+  color: #1a1a1a;
   color: #00d2ff;
 }
 .column {
@@ -61,5 +62,23 @@ svg {
   justify-content: space-around;
 }
 .contacts {
-  height: 8rem;
+  height: 10rem;
+}
+
+.level-item svg {
+  width: 4rem;
+  height: 4rem;
+  transition: all 200ms ease;
+}
+.level-item svg:hover {
+  transform: translate(-8px, -8px);
+  scale: 1.2;
+}
+#contact {
+  margin-bottom: 2rem;
+}
+.column h1 {
+  margin-bottom: 2rem;
+  font-weight: bold;
+  text-align: center;
 }
