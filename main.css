@@ -24,13 +24,32 @@
   height: 480px;
 }
 .navbar {
-  height: 98px;
-  background: transparent;
+  height: 3rem;
+  background: #000;
+  box-shadow: 0px 0px 3px rgba(10, 10, 10, 0.5);
+}
+.navbar-brand {
+  filter: invert(1);
+  /* border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 3rem;
+  max-height: 3rem;
+  max-width: 3rem;
+  min-width: 3rem;
+  width: 3rem;
+  height: 3rem; */
 }
 .navbar-brand svg {
-  margin: 1rem 2rem;
+  min-height: 1.5rem;
+  margin-left: 0.4rem;
   height: 3rem !important;
   width: 3rem;
+}
+.navbar-menu {
+  display: flex;
+  align-items: center;
 }
 .navbar-item {
   color: #fff;
@@ -38,7 +57,6 @@
   font-size: 1rem;
   font-weight: bold;
   height: 2rem;
-  margin: 2rem 0.5rem;
   border-radius: 1rem;
   transition: all ease 200ms;
 }
@@ -63,6 +81,7 @@ svg {
   text-align: center;
   height: 130px;
   justify-content: space-between;
+  margin: 2rem;
 }
 .gg {
   flex-wrap: wrap;
@@ -111,6 +130,9 @@ svg {
     box-shadow: rgba(10, 10, 10, 0.1) 0px 8px 16px;
     align-items: center;
   }
+  .lang {
+    margin: 1rem;
+  }
   .navbar-item {
     display: inline-block;
     width: 100px;
@@ -120,4 +142,22 @@ svg {
     margin: 0;
     color: #000;
   }
+}
+
+.port img {
+  max-height: 30rem;
+  resize: none;
+  align-self: center;
+}
+.port .card {
+  margin-bottom: 2rem;
+  max-width: 40rem;
+}
+.port .card-image {
+  display: flex;
+  justify-content: center;
+}
+.port-items {
+  justify-content: space-around;
+  flex-wrap: wrap;
 }

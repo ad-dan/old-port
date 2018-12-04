@@ -1,21 +1,24 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="has-navbar-fixed-top">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Document</title>
+    <title>Ad-dan</title>
     <link rel="stylesheet" href="bulma.min.css" />
     <link rel="stylesheet" href="main.css" />
     <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
     />
+    <link rel="icon" href="favicon.ico" type="image/x-icon"/>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"/>
+
   </head>
   <body>
     <div class="mainy">
         <section>
-            <nav class="navbar">
+            <nav class="navbar is-fixed-top-desktop">
               <div class="navbar-brand">
                 <div class="div">
                   <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="364" height="257" viewBox="0 0 364 257">
@@ -81,8 +84,19 @@
     <div class="section">
       <div id="about"><h1 class="title">About me</h1></div>
       <div class="section">
+        <div class="section has-text-centered">
+            <div class="info ">
+                For the most part, I am a self taught developer. I used resources
+                from r/learnprogramming, lynda.com, and freeCodeCamp for most of
+                my learning.
+                <br/>
+                Currently I am in sophomore year of my Computer Engineering course.
+                <br>
+                I enjoy drawing and playing video games.
+              </div>
+        </div>
         <div class="columns">
-          <div class="column is-two-fifths">
+          <div class="column ">
             <h1>Languages</h1>
             <div class="is-flex gg">
               <div class="lang box">
@@ -1417,7 +1431,8 @@
               </div>
             </div>
           </div>
-          <div class="column is-two-fifths "><h1>
+          
+          <div class="column "><h1>
             Tools & Frameworks</h1>
             <div class="is-flex gg">
               <div class="lang box">
@@ -1763,29 +1778,18 @@
               </div>
             </div>
           </div>
-          <div class="column is-one-fifth is-flex  ">
-            <div class="info ">
-              For the most part, I am a self taught developer. I used resources
-              from r/learnprogramming, lynda.com, and freeCodeCamp for most of
-              my learning.
-              <br/>
-              <br/>
-              Currently I am in sophomore year of my Computer Engineering course.
-              <br><br>
-              I enjoy drawing and playing video games.
-            </div>
-          </div>
+          
         </div>
       </div>
 
       <div></div>
     </div>
 
-    <section class="section">
-      <div id="work"><span class="title">Work</span></div>
+    <section class="section port" id="work">
+      <div ><span class="title">Work</span></div>
       <div class="section is-block-touch">
         <div class="columns">
-          <div class="column">
+          <div class="column is-flex port-items">
             <div class="card">
               <div class="card-image">
                 <img src="./fff.JPG" alt="" class="image">
@@ -1793,7 +1797,8 @@
               <div class="card-content">
                 <div class="title">Mercury Finance</div>
                 <div class="content">
-                  Open sourced artifical stocks website. Built using React, this site combines a bunch of different libraries. The stocks prices vary dynamically. There's a huge list of stocks to buy. Inspired by CS50 Finance.
+                  <br>
+                  An oppen sourced artifical stocks website. Built using React, this site combines a bunch of different libraries. The stocks prices vary dynamically. There's a huge list of stocks to buy. <br>Inspired by CS50 Finance.
                 </div>
               </div>
               <div class="card-footer">
@@ -1832,8 +1837,8 @@
                   </div>
                 </div>
               </div>
-          </div>
-          <div class="column">
+          
+          
             <div class="card">
                 <div class="card-image">
                     <img src="./splash.jpg" alt="" class="image"/>
@@ -1860,8 +1865,8 @@
                     </div>
                   </div>
             </div>
-            
-          </div>
+            </div>
+          
         </div>
         <div class="hero">
           <div class="hero-body">
