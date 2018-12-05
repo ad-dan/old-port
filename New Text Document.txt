@@ -15,3 +15,4 @@ https://color.adobe.com/Neon-color-theme-10739220/
 https://color.adobe.com/Neon-colors-color-theme-8008782/ 
 https://color.adobe.com/Neon-color-theme-86811/ <--- Tags
 https://color.adobe.com/Synthwave-color-theme-10200945/
+https://codersblock.com/blog/creating-glow-effects-with-css/

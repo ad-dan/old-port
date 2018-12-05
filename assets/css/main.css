@@ -141,41 +141,6 @@ svg {
   font-weight: bold;
   text-align: center;
 }
-@media (max-width: 1024px) {
-  .mainy {
-    min-height: 200px;
-  }
-  .navbar-menu {
-    color: #000 !important;
-    height: 200px;
-    display: flex !important;
-    justify-content: center;
-    align-items: flex-end;
-    background: transparent;
-    box-shadow: none;
-  }
-  .navbar-end {
-    width: 100%;
-    display: flex;
-    justify-content: space-around;
-    height: 60px;
-    background: #fff;
-    box-shadow: rgba(10, 10, 10, 0.1) 0px 8px 16px;
-    align-items: center;
-  }
-  .lang {
-    margin: 1rem;
-  }
-  .navbar-item {
-    display: inline-block;
-    width: 100px;
-    padding: 1rem;
-    line-height: 0;
-    text-align: center;
-    margin: 0;
-    color: #000;
-  }
-}
 .port img {
   max-height: 30rem;
   resize: none;
@@ -227,4 +192,44 @@ svg {
 .port-items {
   justify-content: space-around;
   flex-wrap: wrap;
+}
+@media (max-width: 1024px) {
+  .mainy {
+    min-height: 200px;
+  }
+  .navbar-menu {
+    color: #000 !important;
+    height: 200px;
+    display: flex !important;
+    justify-content: center;
+    align-items: flex-end;
+    background: transparent;
+    box-shadow: none;
+  }
+  .navbar-end {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    height: 60px;
+    background: #fff;
+    box-shadow: rgba(10, 10, 10, 0.1) 0px 8px 16px;
+    align-items: center;
+  }
+  .lang {
+    margin: 1rem;
+  }
+  .navbar-item {
+    display: inline-block;
+    width: 100px;
+    padding: 1rem;
+    line-height: 0;
+    text-align: center;
+    margin: 0;
+    color: #000;
+  }
+  .port .card {
+    padding: 0.4rem !important;
+  }
+  .card-image {
+  }
 }
