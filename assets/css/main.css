@@ -197,6 +197,16 @@ svg {
   .mainy {
     min-height: 200px;
   }
+  #work {
+    width: 100%;
+    padding: 0 !important;
+    font-size: 14px;
+  }
+  #work .section {
+    width: 100%;
+    padding: 0 !important;
+    padding-top: 2rem !important;
+  }
   .navbar-menu {
     color: #000 !important;
     height: 200px;
@@ -205,6 +215,9 @@ svg {
     align-items: flex-end;
     background: transparent;
     box-shadow: none;
+  }
+  .tag {
+    font-size: 12px !important;
   }
   .navbar-end {
     width: 100%;
