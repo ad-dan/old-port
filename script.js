@@ -47,3 +47,5 @@ const typ = new TypeIt('.typeit', {
       .type(nxt);
   }
 });
+
+AOS.init();

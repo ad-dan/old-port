@@ -7,10 +7,17 @@
     <title>Ad-dan</title>
     <link rel="stylesheet" href="./assets/css/bulma.min.css" />
     <link rel="stylesheet" href="./assets/css/main.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
     />
+    <script src="./aos.js"></script>
+    <script>
+      AOS.init({
+        delay: 100
+      });
+    </script>
   </head>
   <body>
     <div class="mainy">
@@ -58,7 +65,7 @@
         <div class="columns">
           <div class="column ">
             <h1 class="is-size-5">Languages</h1>
-            <div class="is-flex gg">
+            <div class="is-flex gg" data-aos="zoom-in">
               <div class="lang">
                 <img src="./assets/svg/js_logo.svg" alt="" class="svg" />
                 <div class="subtitle is-6 has-text-white has-text-white">
@@ -108,7 +115,7 @@
 
           <div class="column ">
             <h1 class="is-size-5">Tools & Frameworks</h1>
-            <div class="is-flex gg">
+            <div class="is-flex gg" data-aos="zoom-in">
               <div class="lang">
                 <img src="./assets/svg/React.svg" alt="" class="svg" />
                 <div class="subtitle is-size-6 has-text-white">React</div>
@@ -180,7 +187,7 @@
       <div class="section is-block-touch">
         <div class="columns">
           <div class="column is-flex port-items">
-            <div class="card">
+            <div class="card" data-aos="slide-right" data-aos-offset="200">
               <div class="card-image">
                 <img src="./fff.JPG" alt="" class="image" />
               </div>
@@ -202,10 +209,14 @@
                     <span class="tag is-medium">CSS</span>
                   </div>
                 </div>
-                <div class="card-footer-item"><a href="#">Link</a></div>
+                <div class="card-footer-item">
+                  <a href="https://ad-dan.github.io/finance/" target="_blank"
+                    >Link</a
+                  >
+                </div>
               </div>
             </div>
-            <div class="card">
+            <div class="card" data-aos="slide-left" data-aos-offset="200">
               <div class="card-image">
                 <img src="./Capture.jpg" alt="" class="image" />
               </div>
@@ -224,7 +235,14 @@
                     <span class="tag is-medium">CSS</span>
                   </div>
                 </div>
-                <div class="card-footer-item"><a href="#">Link</a></div>
+                <div class="card-footer-item">
+                  <a
+                    href="https://codepen.io/adunreal/full/BmZbEO/"
+                    target="_blank"
+                  >
+                    Link</a
+                  >
+                </div>
               </div>
             </div>
 
@@ -248,7 +266,11 @@
                     <span class="tag is-medium">Javascript</span>
                   </div>
                 </div>
-                <div class="card-footer-item"><a href="#">Link</a></div>
+                <div class="card-footer-item">
+                  <a href="https://github.com/ad-dan/rn-td" target="_blank"
+                    >Link</a
+                  >
+                </div>
               </div>
             </div>
           </div>
@@ -283,6 +305,7 @@
       <div><div class="portfolio-btn">Email: dan.aditya.0@gmail.com</div></div>
     </section>
     <script src="./typeit.min.js"></script>
+
     <script src="./script.js"></script>
   </body>
 </html>
