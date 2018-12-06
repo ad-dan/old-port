@@ -122,16 +122,11 @@ svg {
   justify-content: space-around;
 }
 .contacts {
-  height: 10rem;
-}
-.level-item svg {
-  width: 4rem;
-  height: 4rem;
-  transition: all 200ms ease;
-}
-.level-item svg:hover {
-  transform: translate(-8px, -8px);
-  scale: 1.2;
+  margin-top: 2rem;
+  height: 20rem;
+  justify-content: space-around;
+  align-items: center;
+  padding-top: 2rem;
 }
 #contact {
   margin-bottom: 2rem;
@@ -166,17 +161,17 @@ svg {
   justify-content: space-between;
 }
 .tag {
-  background: transparent !important;
-  color: #fff !important;
-  border: 1px solid #fff !important;
+  border: 2px solid #fff !important;
+  font-weight: 600 !important;
 }
 .tag:nth-child(odd) {
-  border-color: #47ff0a !important;
-  color: #47ff0a !important;
+  color: #ff0a47 !important;
 }
 .tag:nth-child(even) {
-  border-color: #0ac2ff !important;
   color: #0ac2ff !important;
+}
+.tag {
+  font-size: 12px !important;
 }
 .port * {
   border: none;
@@ -199,6 +194,12 @@ svg {
 #name {
   font-size: 4rem;
   letter-spacing: 2px;
+}
+.level-item img {
+  width: 6rem;
+}
+a span {
+  display: none;
 }
 @media (max-width: 1024px) {
   .mainy {
@@ -252,6 +253,48 @@ svg {
   }
   .card-image {
     box-shadow: none;
+  }
+  #contacts {
+    height: 25rem;
+  }
+  .level {
+    display: flex;
+    flex-direction: column;
+  }
+  .level-item img {
+    width: 2rem;
+    margin: 0 1rem;
+  }
+  .level-item {
+    display: flex;
+    justify-content: center;
+    width: 80%;
+    background: #000000;
+    /* fallback for old browsers */
+    /* background: -webkit-linear-gradient(
+      to right,
+      #434343,
+      #000000
+    ); 
+    background: linear-gradient(
+      to right,
+      #434343,
+      #000000
+    ); W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  }
+  a span {
+    display: block;
+  }
+  .level-item a {
+    display: flex;
+    margin: 0 auto;
+    height: 4rem;
+    align-items: center;
+    width: 100%;
+    font-size: 1.5rem;
+    color: #fff !important;
+    font-weight: 600;
+    justify-content: center;
   }
 }
 #contact {
