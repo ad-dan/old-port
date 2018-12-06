@@ -40,7 +40,7 @@
       <section class="hero is-large">
         <div class="hero-body">
           <div class="container ">
-            <h1 class="title has-text-white">Aditya D.</h1>
+            <h1 class=" has-text-white">Aditya D.</h1>
             <h2 class="subtitle has-text-white">
               A 19 year old <span class="typeit"> Javascript developer </span>
             </h2>
@@ -50,7 +50,9 @@
     </div>
 
     <div class="section has-background-black-bis has-text-white">
-      <div id="about"><h1 class="title has-text-white">About me</h1></div>
+      <div id="about" class="section-header">
+        <h1 class="title has-text-white">About me</h1>
+      </div>
       <div class="section">
         <div class="section has-text-centered">
           <div class="info ">
@@ -183,7 +185,7 @@
     </div>
 
     <section class="section port has-background-black" id="work">
-      <div><span class="title">Work</span></div>
+      <div class="section-header"><span class="title">Work</span></div>
       <div class="section is-block-touch">
         <div class="columns">
           <div class="column is-flex port-items">
@@ -216,7 +218,7 @@
                 </div>
               </div>
             </div>
-            <div class="card" data-aos="slide-left" data-aos-offset="200">
+            <div class="card" data-aos="slide-down" data-aos-offset="200">
               <div class="card-image">
                 <img src="./Capture.jpg" alt="" class="image" />
               </div>
@@ -246,9 +248,36 @@
               </div>
             </div>
 
-            <div class="card">
+            <div data-aos="slide-up" class="card">
               <div class="card-image">
                 <img src="./splash.jpg" alt="" class="image" />
+              </div>
+              <div class="card-content">
+                <div class="title">Todo App</div>
+                <div class="content">
+                  A full fledged todo built using React Native. It's cross
+                  platform so it works on both iOS and Android. This was my
+                  first time building a mobile app.
+                </div>
+              </div>
+              <div class="card-footer ">
+                <div class="card-footer-item">
+                  <div class="tags">
+                    <span class="tag is-medium">React Native</span>
+                    <span class="tag is-medium">React</span>
+                    <span class="tag is-medium">Javascript</span>
+                  </div>
+                </div>
+                <div class="card-footer-item">
+                  <a href="https://github.com/ad-dan/rn-td" target="_blank"
+                    >Link</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div data-aos="slide-left" class="card">
+              <div class="card-image">
+                <img src="./assets/svg/2048-game.svg" alt="" class="image" />
               </div>
               <div class="card-content">
                 <div class="title">Todo App</div>

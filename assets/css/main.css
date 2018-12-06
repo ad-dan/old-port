@@ -62,7 +62,7 @@
 }
 .navbar-item {
   box-sizing: border-box;
-
+  text-transform: uppercase;
   background: #bc4e9c; /* fallback for old browsers */
   background: -webkit-linear-gradient(
     to bottom,
@@ -193,7 +193,7 @@ svg {
   justify-content: space-around;
   flex-wrap: wrap;
 }
-.card-image {
+.card-image .image {
   box-shadow: 0px 0px 40px 10px #009eff, inset 0px 0px 100px 5px #009eff;
 }
 @media (max-width: 1024px) {
@@ -249,4 +249,15 @@ svg {
   .card-image {
     box-shadow: none;
   }
+}
+#contact {
+  border: 5px solid #fff;
+  padding: 1rem 1.5rem;
+}
+.section-header {
+  border: 5px solid #fff;
+  padding: 1rem 1.5rem;
+  width: 15rem;
+  text-align: center;
+  margin: 0 auto;
 }
