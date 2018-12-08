@@ -303,6 +303,12 @@ a span {
     min-height: 2.5rem;
     min-width: 2.5rem;
   }
+  .card-footer-item a {
+    border: 2px solid #fff;
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding: 0.5rem 4rem;
+  }
 }
 #contact {
   border: 5px solid #fff;
