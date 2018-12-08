@@ -1,14 +1,17 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600');
+body {
+  overflow: hidden;
+}
 * {
   font-family: 'Open Sans', sans-serif !important;
 }
-*,
+/* *,
 *::before,
 *::after {
   box-sizing: border-box;
   margin: 0;
-  padding: 0;
-}
+  padding: 0; 
+}*/
 
 .mainy {
   color: #fff;
@@ -56,9 +59,24 @@
   height: 3rem !important;
   width: 3rem;
 }
-.navbar-menu {
+#burger {
   display: flex;
+}
+.stick {
+  position: fixed;
+  min-width: 100vw;
+  z-index: 1000;
+}
+.navbar-end {
+  display: flex;
+  height: 3rem;
+  justify-content: space-around;
   align-items: center;
+}
+.navbar-item img {
+  height: 1.4rem;
+  width: 1.4rem;
+  margin: 0 auto;
 }
 .navbar-item {
   box-sizing: border-box;
@@ -78,10 +96,13 @@
   -webkit-text-fill-color: transparent;
   font-size: 1.2rem;
   font-weight: bold;
-  height: 2rem;
+  height: 2.5rem;
+  display: flex;
+  align-items: center;
   border-radius: 1rem;
-  -webkit-font-smoothing: antialiased;
-  text-rendering: optimizeLegibility;
+  margin: 0rem 1.2rem;
+  margin-top: 0.2rem;
+  width: 4rem;
 }
 .navbar-item:hover {
   cursor: pointer;
@@ -89,6 +110,9 @@
   box-sizing: border-box;
   -webkit-background-clip: border-box;
   -webkit-text-fill-color: #fff;
+}
+.navbar-menu {
+  background: #1c1e22;
 }
 .column {
   margin: 0 10px;
@@ -215,38 +239,11 @@ a span {
     padding: 0 !important;
     padding-top: 2rem !important;
   }
-  .navbar-menu {
-    color: #000 !important;
-    height: 200px;
-    display: flex !important;
-    justify-content: center;
-    align-items: flex-end;
-    background: transparent;
-    box-shadow: none;
-  }
   .tag {
     font-size: 12px !important;
   }
-  .navbar-end {
-    width: 100%;
-    display: flex;
-    justify-content: space-around;
-    height: 60px;
-    background: #fff;
-    box-shadow: rgba(10, 10, 10, 0.1) 0px 8px 16px;
-    align-items: center;
-  }
   .lang {
     margin: 1rem;
-  }
-  .navbar-item {
-    display: inline-block;
-    width: 100px;
-    padding: 1rem;
-    line-height: 0;
-    text-align: center;
-    margin: 0;
-    color: #000;
   }
   .port .card {
     padding: 0.4rem !important;
@@ -296,6 +293,16 @@ a span {
     font-weight: 600;
     justify-content: center;
   }
+  .navbar-item {
+    height: 4rem;
+    width: 30vw;
+    border-radius: 0;
+    margin: 0;
+  }
+  .navbar-item img {
+    min-height: 2.5rem;
+    min-width: 2.5rem;
+  }
 }
 #contact {
   border: 5px solid #fff;
@@ -307,4 +314,19 @@ a span {
   width: 15rem;
   text-align: center;
   margin: 0 auto;
+}
+@keyframes tracking-in-expand {
+  0% {
+    letter-spacing: -0.5em;
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.6;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.tracking-in-expand {
+  animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.61, 0.355, 1) both;
 }

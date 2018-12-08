@@ -4,6 +4,12 @@ const workBtn = document.querySelector('#work-btn');
 const workie = document.querySelector('#work').getBoundingClientRect();
 const contBtn = document.querySelector('#contact-btn');
 const contactie = document.querySelector('#contact').getBoundingClientRect();
+const burger = document.querySelector('.navbar-burger');
+const nav = document.querySelector('.navbar-menu');
+
+burger.addEventListener('click', () => {
+  nav.classList.toggle('is-active');
+});
 
 ab.addEventListener('click', () => {
   scrollTo({

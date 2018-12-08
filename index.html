@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="has-navbar-fixed-top">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -21,17 +21,24 @@
   </head>
   <body>
     <div class="mainy">
-      <section>
-        <nav class="navbar is-fixed-top-desktop">
+      <section class="stick">
+        <nav class="navbar">
           <div class="navbar-brand">
-            <div class="div"></div>
-            <div class="navbar-burger"></div>
+            <div class="navbar-burger is-invisible-desktop" id="burger">
+              <img src="./assets/svg/iconfinder_menu-alt_134216.svg" alt="" />
+            </div>
           </div>
-          <div class="navbar-menu is-active">
+          <div class="navbar-menu">
             <div class="navbar-end">
-              <div class="navbar-item" id="abt">About</div>
-              <div class="navbar-item" id="work-btn">Work</div>
-              <div class="navbar-item" id="contact-btn">Contact</div>
+              <div class="navbar-item" id="abt">
+                <img src="./assets/svg/at-symbol-svgrepo-com (1).svg" alt="" />
+              </div>
+              <div class="navbar-item" id="work-btn">
+                <img src="./assets/svg/briefcase-svgrepo-com.svg" alt="" />
+              </div>
+              <div class="navbar-item" id="contact-btn">
+                <img src="./assets/svg/call-answer-svgrepo-com.svg" alt="" />
+              </div>
             </div>
           </div>
         </nav>
@@ -40,7 +47,9 @@
       <section class="hero is-large">
         <div class="hero-body">
           <div class="container ">
-            <h1 class=" has-text-white" id="name">Aditya D.</h1>
+            <h1 class=" has-text-white tracking-in-expand" id="name">
+              Aditya D.
+            </h1>
             <h2 class="subtitle has-text-white">
               A 19 year old <span class="typeit"> Javascript developer </span>
             </h2>
