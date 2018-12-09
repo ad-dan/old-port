@@ -46,6 +46,18 @@ body {
   height: 200px;
   background: grey;
 }
+.hero-body {
+  padding-bottom: 10rem !important;
+}
+.pic {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  transform: translateY(-60px);
+}
+.pic img {
+  max-height: 30rem;
+}
 #intro {
   background: crimson;
   height: 480px;
@@ -279,8 +291,7 @@ a span {
     display: flex;
     justify-content: center;
     width: 80%;
-    background: #000000;
-    /* fallback for old browsers */ /* background: -webkit-linear-gradient(
+    background: #000000; /* fallback for old browsers */ /* background: -webkit-linear-gradient(
       to right,
       #434343,
       #000000
