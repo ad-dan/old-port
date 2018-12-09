@@ -11,6 +11,24 @@ burger.addEventListener('click', () => {
   nav.classList.toggle('is-active');
 });
 
+window.addEventListener('scroll', e => {
+  if (window.scrollY >= abbie.y && window.scrollY < workie.y) {
+    ab.classList.add('is-hover');
+    workBtn.classList.remove('is-hover');
+    contBtn.classList.remove('is-hover');
+  } else if (window.scrollY >= workie.y && window.scrollY < contactie.y) {
+    ab.classList.remove('is-hover');
+    workBtn.classList.add('is-hover');
+    contBtn.classList.remove('is-hover');
+  } else if (window.scrollY >= contactie.y) {
+    ab.classList.remove('is-hover');
+    workBtn.classList.remove('is-hover');
+    contBtn.classList.add('is-hover');
+  } else {
+    ab.classList.remove('is-hover');
+  }
+});
+
 ab.addEventListener('click', () => {
   scrollTo({
     top: abbie.y,

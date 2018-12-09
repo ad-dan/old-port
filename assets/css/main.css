@@ -138,6 +138,13 @@ body {
   -webkit-background-clip: border-box;
   -webkit-text-fill-color: #fff;
 }
+.is-hover {
+  cursor: pointer;
+  color: #fff;
+  box-sizing: border-box;
+  -webkit-background-clip: border-box;
+  -webkit-text-fill-color: #fff;
+}
 .navbar-menu {
   background: #1c1e22;
 }
