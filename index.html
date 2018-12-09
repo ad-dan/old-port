@@ -13,6 +13,7 @@
       href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
     />
     <script src="./aos.js"></script>
+    <script src="./particles.min.js"></script>
     <script>
       AOS.init({
         delay: 100,
@@ -21,7 +22,7 @@
     </script>
   </head>
   <body>
-    <div class="mainy">
+    <div class="mainy" id="m">
       <section class="stick">
         <nav class="navbar">
           <div class="navbar-brand">
@@ -381,10 +382,19 @@
           </a>
         </div>
       </div>
-      <div><div class="portfolio-btn">Email: dan.aditya.0@gmail.com</div></div>
+      <div>
+        <div class="portfolio-btn">Email: dan.aditya.0@gmail.com</div>
+        <div class="subtitle is-size-6" id="copy">
+          Copyright &copy; Aditya. All rights reserved
+        </div>
+      </div>
     </section>
     <script src="./typeit.min.js"></script>
-
+    <script>
+      particlesJS.load('m', './particles.json', function() {
+        console.log('callback - particles.js config loaded');
+      });
+    </script>
     <script src="./script.js"></script>
   </body>
 </html>

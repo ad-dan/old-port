@@ -19,12 +19,6 @@ body {
 .mainy {
   color: #fff;
   min-height: 100vh;
-
-  background: url('../img/hq.jpeg');
-  background-size: cover;
-  background-position: 0px, -200px;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
 }
 #work {
   background: linear-gradient(
@@ -150,6 +144,27 @@ body {
 }
 .column {
   margin: 0 10px;
+}
+#particles-js {
+  width: 500px;
+  height: 500px;
+  background: #ff0a47;
+}
+#m {
+  position: relative;
+  background: #c31432; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to bottom,
+    #240b36,
+    #c31432
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to bottom, #240b36, #c31432);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 svg {
   width: 60px;
@@ -298,7 +313,8 @@ a span {
     display: flex;
     justify-content: center;
     width: 80%;
-    background: #000000; /* fallback for old browsers */ /* background: -webkit-linear-gradient(
+    background: #000000;
+    /* fallback for old browsers */ /* background: -webkit-linear-gradient(
       to right,
       #434343,
       #000000
@@ -394,4 +410,7 @@ a span {
 }
 .contact-item:hover {
   transform: scale(0.9);
+}
+#copy {
+  margin-top: 2rem;
 }
