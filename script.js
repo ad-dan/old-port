@@ -20,12 +20,14 @@ window.addEventListener('scroll', e => {
     ab.classList.remove('is-hover');
     workBtn.classList.add('is-hover');
     contBtn.classList.remove('is-hover');
-  } else if (window.scrollY >= contactie.y) {
+  } else if (window.scrollY >= contactie.y - 450) {
     ab.classList.remove('is-hover');
     workBtn.classList.remove('is-hover');
     contBtn.classList.add('is-hover');
   } else {
     ab.classList.remove('is-hover');
+    workBtn.classList.remove('is-hover');
+    contBtn.classList.remove('is-hover');
   }
 });
 
@@ -51,11 +53,12 @@ contBtn.addEventListener('click', () => {
 });
 
 const devStrings = [
-  'Javascript dev',
-  'Web dev',
-  'Script kiddie',
-  'Coder',
-  'App developer'
+  'javaScript dev',
+  'web dev',
+  'designer',
+  'coder',
+  'app developer',
+  'neet'
 ];
 let txt = Math.floor(Math.random() * 5);
 let nxt = devStrings[txt];

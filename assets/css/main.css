@@ -269,6 +269,9 @@ svg {
 a span {
   display: none;
 }
+#me {
+  border-radius: 0.5rem;
+}
 @media (max-width: 1024px) {
   .mainy {
     min-height: 200px;
@@ -378,6 +381,17 @@ a span {
   .foot {
     margin-bottom: 4rem;
   }
+  .hero-body {
+    margin-top: 5rem;
+    padding: 1rem;
+  }
+  #name {
+    font-size: 3rem;
+  }
+  #me {
+    height: 30vh;
+    margin-bottom: -10rem;
+  }
 }
 #contact {
   border: 5px solid #fff;
@@ -414,3 +428,6 @@ a span {
 #copy {
   margin-top: 2rem;
 }
+/* .hero-body {
+  margin-top: 4rem !important;
+} */
