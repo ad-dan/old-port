@@ -11,23 +11,39 @@ burger.addEventListener('click', () => {
   nav.classList.toggle('is-active');
 });
 
+let change = 0;
+
 window.addEventListener('scroll', e => {
-  if (window.scrollY >= abbie.y && window.scrollY < workie.y) {
+  if (window.scrollY >= abbie.y && window.scrollY < workie.y && change != 1) {
+    change = 1;
     ab.classList.add('is-hover');
     workBtn.classList.remove('is-hover');
     contBtn.classList.remove('is-hover');
-  } else if (window.scrollY >= workie.y && window.scrollY < contactie.y) {
+    return;
+  }
+  if (
+    window.scrollY >= workie.y &&
+    window.scrollY < contactie.y - 499 &&
+    change != 2
+  ) {
     ab.classList.remove('is-hover');
     workBtn.classList.add('is-hover');
     contBtn.classList.remove('is-hover');
-  } else if (window.scrollY >= contactie.y - 450) {
+    change = 2;
+    return;
+  }
+  if (window.scrollY >= contactie.y - 500 && change != 3) {
+    change = 3;
     ab.classList.remove('is-hover');
     workBtn.classList.remove('is-hover');
     contBtn.classList.add('is-hover');
-  } else {
+    return;
+  }
+  if (window.scrollY < abbie.y && change != 0) {
     ab.classList.remove('is-hover');
     workBtn.classList.remove('is-hover');
     contBtn.classList.remove('is-hover');
+    change = 0;
   }
 });
 

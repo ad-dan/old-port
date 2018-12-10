@@ -316,8 +316,7 @@ a span {
     display: flex;
     justify-content: center;
     width: 80%;
-    background: #000000;
-    /* fallback for old browsers */ /* background: -webkit-linear-gradient(
+    background: #000000; /* fallback for old browsers */ /* background: -webkit-linear-gradient(
       to right,
       #434343,
       #000000
@@ -431,3 +430,9 @@ a span {
 /* .hero-body {
   margin-top: 4rem !important;
 } */
+#contact,
+.section-header .title {
+  font-size: 1.2rem !important;
+  text-transform: uppercase;
+  letter-spacing: 2px !important;
+}
