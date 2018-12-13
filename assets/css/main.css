@@ -271,7 +271,7 @@ a span {
   display: none;
 }
 #me {
-  border-radius: 0.5rem;
+  height: 30rem;
 }
 @media (max-width: 1024px) {
   .mainy {
@@ -317,8 +317,7 @@ a span {
     display: flex;
     justify-content: center;
     width: 80%;
-    background: #000000;
-    /* fallback for old browsers */ /* background: -webkit-linear-gradient(
+    background: #000000; /* fallback for old browsers */ /* background: -webkit-linear-gradient(
       to right,
       #434343,
       #000000
