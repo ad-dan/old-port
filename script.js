@@ -6,6 +6,7 @@ const contBtn = document.querySelector('#contact-btn');
 const contactie = document.querySelector('#contact').getBoundingClientRect();
 const burger = document.querySelector('.navbar-burger');
 const nav = document.querySelector('.navbar-menu');
+const navbar = document.querySelector('.navbar');
 
 burger.addEventListener('click', () => {
   nav.classList.toggle('is-active');
@@ -14,6 +15,10 @@ burger.addEventListener('click', () => {
 let change = 0;
 
 window.addEventListener('scroll', e => {
+  if (change != 0 && navbar.classList.contains('is-top')) {
+    navbar.classList.remove('is-top');
+    navbar.classList.add('is-bot');
+  }
   if (window.scrollY >= abbie.y && window.scrollY < workie.y && change != 1) {
     change = 1;
     ab.classList.add('is-hover');
@@ -43,6 +48,8 @@ window.addEventListener('scroll', e => {
     ab.classList.remove('is-hover');
     workBtn.classList.remove('is-hover');
     contBtn.classList.remove('is-hover');
+    navbar.classList.remove('is-bot');
+    navbar.classList.add('is-top');
     change = 0;
   }
 });

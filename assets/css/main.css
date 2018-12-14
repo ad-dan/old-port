@@ -5,7 +5,7 @@ body {
   overflow: hidden;
 }
 * {
-  font-family: 'Proxima Nova', sans-serif !important;
+  font-family: 'Proxima Nova', Helvetica, Arial, sans-serif !important;
 }
 .title {
   font-weight: 600 !important;
@@ -60,9 +60,8 @@ body {
 }
 .navbar {
   height: 3rem;
-  background: #1c1e22;
-  box-shadow: 0px 0px 3px rgba(10, 10, 10, 0.5);
 }
+
 .navbar-brand {
   filter: invert(1);
   /* border-radius: 50%;
@@ -132,6 +131,18 @@ body {
   color: #fff;
   box-sizing: border-box;
   -webkit-background-clip: border-box;
+  background: #8e2de2;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #4a00e0,
+    #8e2de2
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #4a00e0,
+    #8e2de2
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   -webkit-text-fill-color: #fff;
 }
 .is-hover {
@@ -139,10 +150,22 @@ body {
   color: #fff;
   box-sizing: border-box;
   -webkit-background-clip: border-box;
+  background: #8e2de2; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #4a00e0, #8e2de2);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #4a00e0,
+    #8e2de2
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   -webkit-text-fill-color: #fff;
 }
-.navbar-menu {
+.navbar {
+  background: transparent;
+}
+.is-bot {
   background: #1c1e22;
+  box-shadow: 0px 0px 3px rgba(10, 10, 10, 0.5);
 }
 .column {
   margin: 0 10px;
@@ -154,14 +177,14 @@ body {
 }
 #m {
   position: relative;
-  background: #c31432; /* fallback for old browsers */
-  background: -webkit-linear-gradient(
-    to bottom,
-    #240b36,
-    #c31432
-  ); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to bottom, #240b36, #c31432);
-  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: #00f260; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to top left, #0575e6, #00f260);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to top left,
+    #0575e6,
+    #00f260
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 canvas {
   position: absolute;
@@ -273,7 +296,14 @@ a span {
 #me {
   height: 30rem;
 }
-@media (max-width: 1024px) {
+@media (max-width: 1087px) {
+  .navbar-menu {
+    background: #1c1e22;
+    box-shadow: 0px 0px 3px rgba(10, 10, 10, 0.5);
+  }
+  .navbar-end {
+    background: #1c1e22;
+  }
   .mainy {
     min-height: 200px;
   }
@@ -317,7 +347,8 @@ a span {
     display: flex;
     justify-content: center;
     width: 80%;
-    background: #000000; /* fallback for old browsers */ /* background: -webkit-linear-gradient(
+    background: #000000;
+    /* fallback for old browsers */ /* background: -webkit-linear-gradient(
       to right,
       #434343,
       #000000
@@ -394,11 +425,15 @@ a span {
   }
 }
 #contact {
-  border: 5px solid #fff;
+  border: 5px solid transparent;
+  border-image: linear-gradient(-45deg, #ee0979, #ff6a00);
+  border-image-slice: 1;
   padding: 1rem 1.5rem;
 }
 .section-header {
-  border: 5px solid #fff;
+  border: 5px solid transparent;
+  border-image: linear-gradient(-45deg, #ee0979, #ff6a00);
+  border-image-slice: 1;
   padding: 1rem 1.5rem;
   width: 15rem;
   text-align: center;
