@@ -5,6 +5,63 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Ad-dan - Portfolio</title>
+
+    <style>
+      body {
+        margin: 0;
+        overflow: hidden;
+      }
+      #loader {
+        height: 100vh;
+        width: 100vw;
+        position: fixed;
+        top: 0;
+        background: black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 10000;
+      }
+      .load-main {
+        height: 240px;
+        width: 240px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: black;
+        border: 5px solid blue;
+        color: #fff;
+        border-radius: 50%;
+        animation: rot 500ms ease-out infinite alternate-reverse;
+        font-size: 32px;
+      }
+      @keyframes rot {
+        from {
+          transform: translateY(20px);
+        }
+        to {
+          transform: translateY(-20px);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div id="loader">
+      <div class="load-main"><span>LOADING</span></div>
+    </div>
+    <script>
+      let loader = document.getElementById('loader');
+      let finished = false;
+      let intr = setInterval(() => {
+        if (finished) {
+          loader.style.display = 'none';
+          clearInterval(intr);
+        }
+      }, 2000);
+      window.addEventListener('load', () => {
+        finished = true;
+      });
+    </script>
     <link rel="stylesheet" href="./assets/css/bulma.min.css" />
     <link rel="stylesheet" href="./assets/css/main.css" />
     <link rel="stylesheet" href="./assets/css/aos.css" />
@@ -20,8 +77,6 @@
         once: true
       });
     </script>
-  </head>
-  <body>
     <div id="scene">
       <div class="mainy" id="m">
         <section class="stick">

@@ -133,11 +133,8 @@ body {
   -webkit-background-clip: border-box;
   background: #8e2de2;
   /* fallback for old browsers */
-  background: -webkit-linear-gradient(
-    to right,
-    #4a00e0,
-    #8e2de2
-  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: -webkit-linear-gradient(to right, #4a00e0, #8e2de2);
+  /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(
     to right,
     #4a00e0,
@@ -150,14 +147,12 @@ body {
   color: #fff;
   box-sizing: border-box;
   -webkit-background-clip: border-box;
-  background: #8e2de2; /* fallback for old browsers */
+  background: #8e2de2;
+  /* fallback for old browsers */
   background: -webkit-linear-gradient(to right, #4a00e0, #8e2de2);
-  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(
-    to right,
-    #4a00e0,
-    #8e2de2
-  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  ); /* Chrome 10-25, Safari 5.1-6
+  background: linear-gradient(to right, #4a00e0, #8e2de2);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   -webkit-text-fill-color: #fff;
 }
 .navbar {
@@ -180,11 +175,8 @@ body {
   background: #00f260; /* fallback for old browsers */
   background: -webkit-linear-gradient(to top left, #0575e6, #00f260);
   /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(
-    to top left,
-    #0575e6,
-    #00f260
-  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: linear-gradient(to top left, #0575e6, #00f260);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 canvas {
   position: absolute;
