@@ -103,19 +103,6 @@ body {
 .navbar-item {
   box-sizing: border-box;
   text-transform: uppercase;
-  background: #eb3349; /* fallback for old browsers */
-  background: -webkit-linear-gradient(
-    -45deg,
-    #f45c43,
-    #eb3349
-  ); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(
-    -45deg,
-    #f45c43,
-    #eb3349
-  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
   font-size: 1.2rem;
   font-weight: bold;
   height: 2.5rem;
@@ -141,6 +128,9 @@ body {
     #8e2de2
   ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   -webkit-text-fill-color: #fff;
+}
+#typer {
+  width: 24rem;
 }
 .is-hover {
   cursor: pointer;
@@ -323,6 +313,11 @@ a span {
   }
   #contacts {
     height: 25rem;
+  }
+  .pic {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
   }
   .level {
     display: flex;
