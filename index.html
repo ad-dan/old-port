@@ -54,14 +54,11 @@
     <script>
       let loader = document.getElementById('loader');
       let finished = false;
-      let intr = setInterval(() => {
-        if (finished) {
-          loader.style.display = 'none';
-          clearInterval(intr);
-        }
-      }, 2000);
       window.addEventListener('load', () => {
         finished = true;
+        setTimeout(() => {
+          loader.style.display = 'none';
+        }, 1500);
       });
     </script>
     <link rel="stylesheet" href="./assets/css/bulma.min.css" />
@@ -91,13 +88,13 @@
             <div class="navbar-menu is-active">
               <div class="navbar-end">
                 <div class="navbar-item" id="abt">
+                  <img src="./assets/svg/briefcase-svgrepo-com.svg" alt="" />
+                </div>
+                <div class="navbar-item" id="work-btn">
                   <img
                     src="./assets/svg/at-symbol-svgrepo-com (1).svg"
                     alt=""
                   />
-                </div>
-                <div class="navbar-item" id="work-btn">
-                  <img src="./assets/svg/briefcase-svgrepo-com.svg" alt="" />
                 </div>
                 <div class="navbar-item" id="contact-btn">
                   <img src="./assets/svg/call-answer-svgrepo-com.svg" alt="" />
@@ -130,7 +127,135 @@
           </div>
         </section>
       </div>
+      <section class="section port has-background-black" id="work">
+        <div class="section-header"><span class="title">Work</span></div>
+        <div class="section is-block-touch">
+          <div class="columns">
+            <div class="column is-flex port-items">
+              <div class="card" data-aos="zoom-in-up" data-aos-offset="200">
+                <div class="card-image">
+                  <img src="./fff.JPG" alt="" class="image" />
+                </div>
+                <div class="card-content">
+                  <div class="title">
+                    <a href="https://ad-dan.github.io/finance/" target="_blank"
+                      >Mercury Finance</a
+                    >
+                  </div>
 
+                  <div class="content">
+                    <br />
+                    An open sourced artifical stocks website. Built using React,
+                    this site combines a bunch of different libraries. The
+                    stocks prices vary dynamically. There's a huge list of
+                    stocks to buy. <br />Inspired by CS50 Finance.
+                  </div>
+                </div>
+                <div class="card-footer">
+                  <div class="card-footer-item">
+                    <div class="tags">
+                      <span class="tag exp">React</span>
+                      <span class="tag ">Javascript</span>
+                      <span class="tag ">CSS</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card" data-aos="zoom-in-up" data-aos-offset="200">
+                <div class="card-image">
+                  <img src="./Capture.jpg" alt="" class="image" />
+                </div>
+                <div class="card-content">
+                  <div class="title">
+                    <a
+                      href="https://codepen.io/adunreal/full/BmZbEO/"
+                      target="_blank"
+                    >
+                      Game of Life</a
+                    >
+                  </div>
+                  <div class="content">
+                    A simulation of the cellular automata 'Game of Life'. Built
+                    using React. This was my first large project
+                  </div>
+                </div>
+                <div class="card-footer">
+                  <div class="card-footer-item">
+                    <div class="tags">
+                      <span class="tag is-medium">React</span>
+                      <span class="tag is-medium">Javascript</span>
+                      <span class="tag is-medium">CSS</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div data-aos="zoom-in-up" class="card">
+                <div class="card-image">
+                  <img src="./splash.jpg" alt="" class="image" />
+                </div>
+                <div class="card-content">
+                  <div class="title">
+                    <a href="https://github.com/ad-dan/rn-td" target="_blank"
+                      >RN Todo</a
+                    >
+                  </div>
+                  <div class="content">
+                    A full fledged todo built using React Native. It's cross
+                    platform so it works on both iOS and Android. This was my
+                    first time building a mobile app.
+                  </div>
+                </div>
+                <div class="card-footer ">
+                  <div class="card-footer-item">
+                    <div class="tags">
+                      <span class="tag is-medium">React Native</span>
+                      <span class="tag is-medium">React</span>
+                      <span class="tag is-medium">JS</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div data-aos="zoom-in-up" class="card">
+                <div class="card-image">
+                  <img src="./assets/svg/2048-game.svg" alt="" class="image" />
+                </div>
+                <div class="card-content">
+                  <div class="title">
+                    <a href="https://github.com/ad-dan/rn-td" target="_blank"
+                      >2048</a
+                    >
+                  </div>
+                  <div class="content">
+                    Responsive and mobile friendly clone of the game 2048.
+                    Powered by React and HammerJS
+                  </div>
+                </div>
+                <div class="card-footer ">
+                  <div class="card-footer-item">
+                    <div class="tags">
+                      <span class="tag is-medium">Game</span>
+                      <span class="tag is-medium">React</span>
+                      <span class="tag is-medium">JS</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="hero">
+            <div class="hero-body">
+              <div class="subtitle has-text-centered">
+                Besides these I also have a bunch of projects on my
+                <a href="https://codepen.io/adunreal/" target="_blank"
+                  >Codepen</a
+                >
+                and Github
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
       <div class="section has-background-black has-text-white" id="x">
         <div id="about" class="section-header">
           <span class="title has-text-white">About me</span>
@@ -284,135 +409,6 @@
         <div></div>
       </div>
 
-      <section class="section port has-background-black" id="work">
-        <div class="section-header"><span class="title">Work</span></div>
-        <div class="section is-block-touch">
-          <div class="columns">
-            <div class="column is-flex port-items">
-              <div class="card" data-aos="zoom-in-up" data-aos-offset="200">
-                <div class="card-image">
-                  <img src="./fff.JPG" alt="" class="image" />
-                </div>
-                <div class="card-content">
-                  <div class="title">
-                    <a href="https://ad-dan.github.io/finance/" target="_blank"
-                      >Mercury Finance</a
-                    >
-                  </div>
-
-                  <div class="content">
-                    <br />
-                    An open sourced artifical stocks website. Built using React,
-                    this site combines a bunch of different libraries. The
-                    stocks prices vary dynamically. There's a huge list of
-                    stocks to buy. <br />Inspired by CS50 Finance.
-                  </div>
-                </div>
-                <div class="card-footer">
-                  <div class="card-footer-item">
-                    <div class="tags">
-                      <span class="tag exp">React</span>
-                      <span class="tag ">Javascript</span>
-                      <span class="tag ">CSS</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="card" data-aos="zoom-in-up" data-aos-offset="200">
-                <div class="card-image">
-                  <img src="./Capture.jpg" alt="" class="image" />
-                </div>
-                <div class="card-content">
-                  <div class="title">
-                    <a
-                      href="https://codepen.io/adunreal/full/BmZbEO/"
-                      target="_blank"
-                    >
-                      Game of Life</a
-                    >
-                  </div>
-                  <div class="content">
-                    A simulation of the cellular automata 'Game of Life'. Built
-                    using React. This was my first large project
-                  </div>
-                </div>
-                <div class="card-footer">
-                  <div class="card-footer-item">
-                    <div class="tags">
-                      <span class="tag is-medium">React</span>
-                      <span class="tag is-medium">Javascript</span>
-                      <span class="tag is-medium">CSS</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div data-aos="zoom-in-up" class="card">
-                <div class="card-image">
-                  <img src="./splash.jpg" alt="" class="image" />
-                </div>
-                <div class="card-content">
-                  <div class="title">
-                    <a href="https://github.com/ad-dan/rn-td" target="_blank"
-                      >RN Todo</a
-                    >
-                  </div>
-                  <div class="content">
-                    A full fledged todo built using React Native. It's cross
-                    platform so it works on both iOS and Android. This was my
-                    first time building a mobile app.
-                  </div>
-                </div>
-                <div class="card-footer ">
-                  <div class="card-footer-item">
-                    <div class="tags">
-                      <span class="tag is-medium">React Native</span>
-                      <span class="tag is-medium">React</span>
-                      <span class="tag is-medium">JS</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div data-aos="zoom-in-up" class="card">
-                <div class="card-image">
-                  <img src="./assets/svg/2048-game.svg" alt="" class="image" />
-                </div>
-                <div class="card-content">
-                  <div class="title">
-                    <a href="https://github.com/ad-dan/rn-td" target="_blank"
-                      >2048</a
-                    >
-                  </div>
-                  <div class="content">
-                    Responsive and mobile friendly clone of the game 2048.
-                    Powered by React and HammerJS
-                  </div>
-                </div>
-                <div class="card-footer ">
-                  <div class="card-footer-item">
-                    <div class="tags">
-                      <span class="tag is-medium">Game</span>
-                      <span class="tag is-medium">React</span>
-                      <span class="tag is-medium">JS</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="hero">
-            <div class="hero-body">
-              <div class="subtitle has-text-centered">
-                Besides these I also have a bunch of projects on my
-                <a href="https://codepen.io/adunreal/" target="_blank"
-                  >Codepen</a
-                >
-                and Github
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
       <section
         class="section has-text-centered has-background-black has-text-white foot"
       >
@@ -421,7 +417,11 @@
         </div>
         <div class="level contacts is-flex-touch">
           <div class="level-item">
-            <a href="https://twitter.com/AdDenticle" class="is-flex" target="_blank">
+            <a
+              href="https://twitter.com/AdDenticle"
+              class="is-flex"
+              target="_blank"
+            >
               <img
                 src="./assets/svg/twitter-svgrepo-com.svg"
                 class="image contact-item"
