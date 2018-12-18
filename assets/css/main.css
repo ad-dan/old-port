@@ -147,9 +147,6 @@ body {
   background: #1c1e22;
   box-shadow: 0px 0px 3px rgba(10, 10, 10, 0.5);
 }
-.column {
-  margin: 0 10px;
-}
 #particles-js {
   width: 500px;
   height: 500px;
@@ -157,11 +154,19 @@ body {
 }
 #m {
   position: relative;
-  background: #00f260; /* fallback for old browsers */
-  background: -webkit-linear-gradient(to top left, #0575e6, #00f260);
-  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to top left, #0575e6, #00f260);
-  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: #000046; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    45deg,
+    #1cb5e0,
+    #000046
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    45deg,
+    #1cb5e0,
+    #000046
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 canvas {
   position: absolute;
@@ -285,7 +290,8 @@ a span {
     background: transparent !important;
   }
   .mainy {
-    min-height: 200px;
+    padding: 2rem 0rem;
+    min-height: 20rem;
   }
   #work {
     width: 100%;
@@ -410,6 +416,12 @@ a span {
   #me {
     height: 30vh;
     margin-bottom: -10rem;
+  }
+  canvas {
+    display: none !important;
+  }
+  .column {
+    padding: 0;
   }
 }
 #contact {
